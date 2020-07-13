@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Write a JS program to display the current day and time</title>
+    </head>
+    <body>
+        <h2>Current Day and Time</h2>
+        <script>
+            var today= new Date();
+            var day= today.getDay();
+            var daylist= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"]
+            document.write("Today is : "+daylist[day]+ ".");
+            document.write("<br>");
+
+            var hours= today.getHours();
+            var minutes= today.getMinutes();
+            var seconds= today.getSeconds();
+            var ampm;
+            if(hours >= 12)
+            {
+                hours= hours-12;
+                ampm= "PM";
+            }
+            else
+            {
+                hours= hours;
+                ampm= "AM";
+            }
+
+            if(minutes < 10)
+            {
+                minutes= '0'+ minutes;
+            }
+            else
+            {
+                minutes= minutes;
+            }
+
+            if(seconds < 10)
+            {
+                seconds= '0'+ seconds;
+            }
+            else
+            {
+                seconds= seconds;
+            }
+
+            document.write("Current Time is: " +hours+ " " +ampm+ " : " +minutes+ " : " +seconds);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Write a JS program to get the current date</title>
+    </head>
+    <body>
+        <h2>Today's Date</h2>
+        <script>
+            var today= new Date();
+            var dd= today.getDate();
+            var mm= today.getMonth();
+            var yyyy= today.getFullYear();
+            
+            if(dd<10)
+            {
+                dd= '0'+dd;
+            }
+
+            if(mm<10)
+            {
+                mm= '0'+mm;
+            }
+
+            today= mm+'-'+dd+'-'+yyyy;
+            document.write("Date Format: mm-dd-yyyy <br>")
+            document.write(today);
+            document.write("<br><br>")
+
+            today= mm+'/'+dd+'/'+yyyy;
+            document.write("Date Format: mm/dd/yyyy <br>")
+            document.write(today);
+            document.write("<br><br>")
+            
+            today= dd+'-'+mm+'-'+yyyy;
+            document.write("Date Format: dd-mm-yyyy <br>")
+            document.write(today);
+            document.write("<br><br>")
+            
+            today= dd+'/'+mm+'/'+yyyy;
+            document.write("Date Format: dd/mm/yyyy <br>")
+            document.write(today);
+        </script>
+    </body>
+</html>
