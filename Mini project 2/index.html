@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2</title>
+
+    <style>
+        #timer{
+            width: auto;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            display: block;
+        }
+
+        h2{
+            text-align: center;
+            font-family: cursive;
+            color: darkmagenta;
+        }
+
+        button{
+            cursor: pointer;
+            font-weight: 700;
+            border-radius: 4px;
+            height: 25px;
+        }
+
+        #input{
+            font-weight: bold;
+            text-align: right;
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: lightgoldenrodyellow;
+            color: maroon;
+            
+        }
+
+        #text{
+            font-weight: bold;
+            text-align: center;
+            font-family: cursive;
+            font-size: 18px;
+            color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>Timer Using JavaScript</h2>
+
+    <p id="text">Enter the time in minutes and click start</p>
+
+    <div id="timer">
+        
+        <input type="text" id="input" name="text"/><br><br>
+        <button id="start">Start Timer</button>
+    </div>
+
+    <h2 id="time">0:00</h2>
+
+    <script src="timer.js"></script>
+</body>
+</html>
